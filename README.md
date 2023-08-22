@@ -21,4 +21,4 @@ Follow these instructions to set up the project locally and run the tests.
    npm install
 3. Run cypress
    ```
-   npx cypress run
+   npx cypress open

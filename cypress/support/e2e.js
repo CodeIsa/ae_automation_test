@@ -1,4 +1,3 @@
-import "./commands";
 import "./commandsSearch";
 import "./commandsCart";
 import "./commandsMenu";

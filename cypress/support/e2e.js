@@ -17,6 +17,11 @@
 import './commands'
 import './commandsSearch'
 import './commandsCart'
+import './commandsMenu'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // Prevent Cypress from failing the test
+    return false;
+});

@@ -1,15 +1,13 @@
 describe('Navigate on menu', () => {
+    beforeEach(() => {
+        cy.visit('/'); 
+      });
 
     it('should allow users to navigate between options', () => {
-        cy.visit('/');
-
-        cy.addProductToCart('dp/B0C2RFBJDQ')
-        cy.proceedToCheckout()
-
-
+        cy.openMenu();
+        cy.clickMenuOption('Mais Vendidos');
+        cy.clickMenuOption('Novidades na Amazon');
+        cy.clickMenuOption('Produtos em alta');
     });
 });
 
-
-
-nav-hamburger-menu

@@ -1,11 +1,9 @@
 describe('Adding Products to Cart and Checkout', () => {
     beforeEach(() => {
-        // Before each test, visit the cart page with products already added
-        cy.visit('/'); // Replace with the actual URL of the cart page
+        cy.visit('/');
       });
 
     it('should allow users to add products to the cart and start checkout', () => {
-
         cy.addProductToCart('dp/B0C2RFBJDQ')
         cy.proceedToCheckout()
 

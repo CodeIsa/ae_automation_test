@@ -7,9 +7,9 @@ Cypress.Commands.add('addProductToCart', (productId) => {
 
 Cypress.Commands.add('removeProductToCart', () => {
     cy.get('#nav-cart').first().click();
-    //cy.get('[data-action="delete"]').click({ multiple: true })
+    cy.get('input[value="Excluir"]').click()
     // Verify that the product is removed from the cart
-    cy.get('Active Items').should('have.length', 0); // Adjust the expected length accordingly
+    cy.get('Active Items').should('have.length', 0); 
 });
 
 Cypress.Commands.add('proceedToCheckout', () => {

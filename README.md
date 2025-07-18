@@ -15,7 +15,7 @@ Follow these instructions to set up the project locally and run the tests.
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/CodeIsa/ae_automation_test.git
+   git clone https://github.com/CodeIsa/ae_cypress_automation_test.git
 2. Install dependencies:
    ```
    npm install
